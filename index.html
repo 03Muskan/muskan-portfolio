@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Profile</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- =================== NAVBAR =================== -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" id="navbar-brand" href="#">Welcome To My Profile</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="navbar-links">
+                    <li class="nav-item"><a class="nav-link" href="#hero-section">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills-section">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html#projects-section">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =================== HERO SECTION =================== -->
+    <section id="hero-section" class="hero-section py-5">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+            
+            <!-- Left Side: Name + Role + Social Links -->
+            <div class="hero-text text-center text-md-start">
+                <h1 id="hero-name" class="fw-bold">Muskan Sahu</h1>
+                <p id="hero-role" class="lead">Frontend Developer & UI/UX Designer</p>
+                
+                <div id="hero-buttons" class="mt-3">
+                   <a href="project.html#projects-section"
+                      class="btn btn-primary m-1"
+                      id="btn-view-projects">
+                       View Projects
+                     </a>
+
+                    <a href="./muskan_pcu_Resume.pdf"
+                       target="_blank"
+                       class="btn btn-outline-primary m-1"
+                      id="btn-download-resume">
+                      Download Resume
+                     </a>
+
+                </div>
+            </div>
+
+            <!-- Right Side: Square Profile Picture -->
+            <div class="hero-image mt-4 mt-md-0" id="hero-image">
+                <div class="profile-frame border border-3 rounded-3 overflow-hidden" style="width:380px; height:380px;">
+                    <img src="formal_pic.jpeg" alt="Muskan Profile" class="img-fluid w-100 h-100 object-fit-cover" id="profile-pic">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =================== ABOUT ME =================== -->
+    <section id="about-section" class="about-section py-5">
+        <div class="container">
+            <h2 id="about-heading" class="text-center mb-4">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center" id="about-content">
+                    <p id="about-intro">
+                       I’m a UI/UX designer and frontend enthusiast who loves crafting meaningful digital experiences where design meets functionality. With hands-on experience in HTML, CSS, JavaScript, Tailwind CSS, and Bootstrap, I enjoy building responsive interfaces that are visually engaging and easy to use. Driven by curiosity and creativity, I’m always exploring new design trends, experimenting with ideas, and turning concepts into clean, user-focused solutions.</p>
+                    <p id="about-contact">
+                        <strong>Email:</strong> <a href="mailto:your-email@example.com">muskan.sahu24@pcu.edu.in</a> |
+                        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/muskan-sahu-427754311" target="_blank">LinkedIn</a> |
+                        <strong>GitHub:</strong> <a href="https://github.com/03Muskan" target="_blank">GitHub</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== SKILLS =================== -->
+    <section id="skills-section" class="skills-section py-5 bg-light">
+        <div class="container">
+            <h2 id="skills-heading" class="text-center mb-4">Skills</h2>
+            <div class="row">
+                <!-- Frontend Skills -->
+                <div class="col-md-6" id="frontend-skills">
+                    <h5 class="skills-category">Frontend Development</h5>
+                    <ul id="frontend-skills-list">
+                        <li class="skill-item">HTML5</li>
+                        <li class="skill-item">CSS3</li>
+                        <li class="skill-item">JavaScript</li>
+                        <li class="skill-item">Bootstrap</li>
+                        <div class="skill-item">Tailwind CSS</div>
+                        <li class="skill-item">Responsive Design</li>
+                    </ul>
+                </div>
+                <!-- UI/UX Skills -->
+                <div class="col-md-6" id="uiux-skills">
+                    <h5 class="skills-category">UI/UX Design</h5>
+                    <ul id="uiux-skills-list">
+                        <li class="skill-item">Figma</li>
+                        <li class="skill-item">Wireframing</li>
+                        <li class="skill-item">Prototyping</li>
+                        <li class="skill-item">User Research</li>
+                        <li class="skill-item">Interactive Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+<section id="tools">
+  <h2>Tools & Technologies</h2>
+  <p>Figma, Sketch, VS Code, Vite, Adobe XD(Basics)</p>
+</section>
+
+
+    <!-- =================== FEATURED PROJECTS PREVIEW =================== -->
+    <section id="projects-preview-section" class="projects-preview-section py-5">
+        <div class="container">
+            <h2 id="projects-preview-heading" class="text-center mb-4">Featured Projects</h2>
+            <div class="row g-4" id="projects-preview-grid">
+                <!-- Project Card 1 -->
+                <div class="col-md-4 project-card" id="project-card-1">
+                    <div class="card h-100">
+                       
+                        <div class="card-body">
+                            <h5 class="card-title project-title">Donut Store </h5>
+                            <p class="card-text project-description">Designed a clean and visually engaging UI for a donut store with a strong focus on a user-friendly layout. Emphasized attractive product visuals and clear visual hierarchy to enhance user attention. Ensured easy navigation and a seamless ordering experience to improve overall usability.</p>
+                            <a href="project.html#project1" class="btn btn-primary project-btn" id="project-btn-1">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="col-md-4 project-card" id="project-card-2">
+                    <div class="card h-100">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title project-title">Red Bull Buying </h5>
+                            <p class="card-text project-description"> Designed a dynamic Red Bull buying app UI using Figma, incorporating engaging animations, smooth transitions, and bold visuals to reflect the brand’s energetic and vibrant identity.</p>
+                            <a href="project.html#project2" class="btn btn-primary project-btn" id="project-btn-2">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="col-md-4 project-card" id="project-card-3">
+                    <div class="card h-100">
+                         
+                        <div class="card-body">
+                            <h5 class="card-title project-title">IceCream Parlour(Wireframing) </h5>
+                            <p class="card-text project-description"> Designed a dynamic Red Bull buying app UI using Figma, incorporating engaging animations, smooth transitions, and bold visuals to reflect the brand’s energetic and vibrant identity.</p>
+                            <a href="project.html#project3" class="btn btn-primary project-btn" id="project-btn-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Project Card 4 -->
+                <div class="col-md-4 project-card" id="project-card-4">
+                    <div class="card h-100">
+                      
+                        <div class="card-body">
+                            <h5 class="card-title project-title">Amazon Clone </h5>
+                            <p class="card-text project-description"> Developed a frontend Amazon clone using HTML, CSS, and JavaScript, focusing on recreating the core shopping experience with a clean and responsive user interface. Designed structured layouts, navigation menus, and product listing sections to closely match real-world e-commerce platforms. This project enhanced my understanding of responsive design, DOM manipulation, and building interactive web interfaces.</p>
+                            <a href="project.html#project4" class="btn btn-primary project-btn" id="project-btn-4">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Project Card 5 -->
+                  <div class="col-md-4 project-card" id="project-card-5">
+                    <div class="card h-100">
+                       
+                        <div class="card-body">
+                            <h5 class="card-title project-title">To Do Lists</h5>
+                            <p class="card-text project-description"> Developed an interactive To-Do List application using HTML, CSS, and JavaScript, focusing on simplicity and usability. Implemented features such as adding, deleting, and marking tasks as completed through dynamic DOM manipulation. This project strengthened my understanding of JavaScript logic, event handling, and creating user-friendly interfaces.</p>
+                            <a href="project.html#project5" class="btn btn-primary project-btn" id="project-btn-5">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="projects.html" class="btn btn-outline-primary" id="btn-view-all-projects">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- =================== CONTACT DETAILS =================== -->
+<section id="contact-section" class="contact-section py-5 bg-light">
+    <div class="container text-center" id="contact-content">
+        <h2 id="contact-heading" class="mb-4">Contact Details</h2>
+        <p id="contact-email"><strong>Email:</strong> muskan.sahu24@pcu.edu.in</p>
+        <p id="contact-phone"><strong>Phone:</strong> +91-7694927656</p>
+        <p id="contact-linkedin"><strong>LinkedIn:</strong> 
+            <a href="https://www.linkedin.com/in/muskan-sahu-427754311" target="_blank">LinkedIn Profile</a>
+        </p>
+        <p id="contact-github"><strong>GitHub:</strong> 
+            <a href="https://github.com/03Muskan" target="_blank">GitHub Profile</a>
+        </p>
+    </div>
+</section>
+
+
+    <!-- =================== FOOTER =================== -->
+    <footer id="footer" class="py-3 bg-dark text-white text-center">
+        <p id="footer-text">&copy; 2026 Muskan. All rights reserved.</p>
+    </footer>
+
+    <!-- =================== BOOTSTRAP JS =================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+
