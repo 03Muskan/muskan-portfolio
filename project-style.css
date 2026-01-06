@@ -1,0 +1,175 @@
+/* ===================== ROOT VARIABLES ===================== */
+:root {
+  --black-bg: #0b0f1a;
+  --black-card: #12182b;
+  --blue-primary: #1e90ff;
+  --blue-secondary: #4da3ff;
+  --blue-accent: #0d6efd;
+  --text-light: #e6e9f0;
+  --text-muted: #aab0c5;
+  --border-dark: #1f2a44;
+}
+
+/* ===================== GLOBAL ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  background-color: var(--black-bg);
+  color: var(--text-light);
+  scroll-behavior: smooth;
+  background-image: url("blue_bg.jpg");
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* ===================== ANIMATIONS ===================== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 10px rgba(30,144,255,0.3); }
+  50% { box-shadow: 0 0 25px rgba(30,144,255,0.7); }
+  100% { box-shadow: 0 0 10px rgba(30,144,255,0.3); }
+}
+
+/* ===================== HEADER / HERO ===================== */
+#projects-hero {
+  padding: 100px 20px 50px;
+  text-align: center;
+  background: linear-gradient(135deg, #05070f, #0b1430);
+  background-image: url("images/projects-bg.jpg"); /* optional bg image */
+  background-size: cover;
+  background-position: center;
+  color: var(--blue-primary);
+}
+
+#projects-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  animation: fadeUp 1s ease;
+  
+}
+
+#projects-hero p {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  animation: fadeUp 1.3s ease;
+}
+
+/* ===================== PROJECT CARDS ===================== */
+.projects-container {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.project-card {
+  background-color: var(--black-card);
+  border: 1px solid var(--border-dark);
+  border-radius: 12px;
+  transition: 0.4s ease;
+  margin-bottom: 50px;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effect on entire card */
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(30,144,255,0.5);
+}
+
+/* Project image */
+.project-img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 300px;
+  border-radius: 10px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  margin-bottom: 20px;
+}
+
+/* Hover effect on image */
+.project-card:hover .project-img {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(30,144,255,0.5);
+}
+
+/* Project text */
+.project-card h5 {
+  color: var(--blue-secondary);
+  margin-bottom: 12px;
+}
+
+.project-card p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color 0.4s ease, text-shadow 0.4s ease;
+}
+
+/* Hover effect on text */
+.project-card:hover p {
+  color: var(--text-light);
+  text-shadow: 0 0 8px rgba(30,144,255,0.7);
+}
+
+/* ===================== MEDIA QUERIES ===================== */
+
+/* Mobile */
+@media (max-width: 576px) {
+  #projects-hero h1 {
+    font-size: 2rem;
+  }
+
+  #projects-hero p {
+    font-size: 1rem;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-img {
+    max-height: 200px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 30px 15px;
+  }
+}
+.project-card:hover .project-img {
+  transform: scale(1.07);
+  box-shadow: 0 0 25px rgba(30,144,255,0.5);
+}
